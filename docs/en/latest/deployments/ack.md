@@ -40,7 +40,7 @@ cd /path/to/apisix-helm-chart
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 kubectl create ns ingress-apisix
-helm install apisix charts/apisix \
+helm install apisix apisx/apisix \
   --set gateway.type=LoadBalancer \
   --set ingress-controller.enabled=true \
   --set etcd.persistence.storageClass="alicloud-disk-ssd" \
